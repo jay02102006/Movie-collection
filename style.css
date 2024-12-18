@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:azure;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: aliceblue;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+
+form input, form button, #genreFilter, #filterButton #RatingButton{
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 75%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button, #filterButton #RatingButton{
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover, #filterButton:hover #RatingButton:hover{
+    background-color:antiquewhite;
+}
+
+.movie-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.movie-list li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background: #fafafa;
+}

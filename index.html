@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Collection</h1>
+        
+        <div class="add-movie">
+            <h2>Add a New Movie</h2>
+            <form id="addMovieForm">
+                <input type="text" id="title" placeholder="Title" required>
+                <input type="text" id="genre" placeholder="Genre" required>
+                <input type="number" id="rating" placeholder="Rating" min="0" max="10" step="0.1" required>
+                <input type="number" id="releaseYear" placeholder="Release Year" required>
+                <button type="submit">Add Movie</button>
+            </form>
+        </div>
+
+        <div class="filter-movies">
+            <h2>Filter Movies</h2>
+            <input type="text" id="genreFilter" placeholder="Enter Genre">
+            <button id="filterButton">Filter</button>
+        </div>
+
+        <div class="movie-list">
+            <h2>Movies</h2>
+            <ul id="movieList"></ul>
+        </div>
+
+        <div class="highest-rating">
+            <h2>HighestRating</h2>
+            <button id="RatingButton">HighestRating</button>
+        </div>
+
+        <div class="filter-movies">
+            <h2>Filtermovies</h2>
+            <input type="text" id="yearFilter" placeholder="Enter year">
+            <button id="yearButton">Filter</button>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
